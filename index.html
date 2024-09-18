@@ -1,0 +1,173 @@
+<!-- Portfolio Assignment: Jenny Tran -->
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Jenny Tran</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+  /* Add padding to website elements */
+  body {
+    padding: 50px;
+  }
+
+  /* Style the hero image */
+  .avatar {
+    width: 360px;
+    height: 450px;
+  }
+
+  /* Style the resume button */
+  .button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+
+  /* Style the Contact section */
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the footer */
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+  }
+</style>
+
+<script src=""></script>
+
+<body>
+  <!-- Navigation bar -->
+  <div class="w3-right">
+    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#work" class="w3-bar-item w3-button">Work Experience</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+
+  <!-- Hero section -->
+  <div>
+    <h4><strong>JENNY TRAN</strong></h4>
+    <h5><br><br><br><br><br>Hello, welcome to my site! &#128075</h5>
+    <h1 style="font-size:3vw"><strong>I'm Jenny Tran,
+        <br>A <i>Software Engineering</i> student<br>at Western University</strong></h1>
+    <!-- Insert hero image -->
+    <img src="cat.jpg" alt="cat" class="avatar" style="transform: translate(800px,-250px);">
+
+    <!-- Click button to download resume -->
+    <a class="download resume" href="resume.pdf" download="proposed_file_name" target="_blank">
+      <button class="button" style="transform: translate(-370px,-100px);">View Resume</button>
+    </a>
+  </div>
+
+  <!-- About secton -->
+  <div>
+    <h1 id="about"><strong>ABOUT ME</strong></h1>
+    <h3>My name is Jenny Tran. Nice to meet you! &#128516</h3>
+    <p>I'm a second year Software Engineering student at Western University. I'm passionate about learning new things
+      and creating technologies that can help others. Through my projects, I have experience coding in Java, Python,
+      C++, HTML, CSS, and JavaScript.</p>
+    <p>My personal hobbies include baking, knitting, and playing the guitar.</p>
+    <p style="color: grey"><br><i>FIELDS OF INTEREST: Artificial Intelligence, Data Science, Game Design, Computer
+        Graphics</i></p>
+    <h1 style="text-align: center"><br>-------------------------------------------------</h1>
+  </div>
+
+  <!-- Projects section -->
+  <div>
+    <h1 id="projects"><strong>PROJECTS</strong></h1>
+    <!-- Add link to GitHub -->
+    <a href="https://github.com/jtran332" target="_blank">Visit my GitHub profile for more details</a>
+    <h1 style="text-align: center"><br>-------------------------------------------------</h1>
+  </div>
+
+  <!-- Work experience section -->
+  <div>
+    <h1 id="work"><strong>WORK EXPERIENCE</strong></h1>
+    <!-- Add link to download resume -->
+    <a class="download resume" href="resume.pdf" download="proposed_file_name" target="_blank">View my resume for more
+      details</a>
+    <h1 style="text-align: center"><br>-------------------------------------------------</h1>
+  </div>
+
+  <!-- Contact section -->
+  <div>
+    <h1 id="contact"><strong>CONTACT ME</strong></h1>
+    <h3>Let's get in touch!</h3>
+    <!-- In-website contact form -->
+    <form action="/action_page.php">
+      <label for="flname">First and Last Name</label>
+      <input type="text" id="flname" name="firstlastname" placeholder="Your first and last name..." />
+
+      <label for="email">Email Address</label>
+      <input type="text" id="email" name="email" placeholder="Your email address..." />
+
+      <label for="subject"><br>Subject</label>
+      <textarea id="subject" id="subject" name="subject" placeholder="Write something..."
+        style="height:180px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    <p style="color: grey"><br><i>Email: jtran332@uwo.ca | Address: 1551 Richmond St, London, ON | Phone: (519)
+        661-2111</i></p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p><i>Email: jtran332@uwo.ca | Address: 1551 Richmond St, London, ON | Phone: (519) 661-2111</i></p>
+  </div>
+</body>
+
+</html>
